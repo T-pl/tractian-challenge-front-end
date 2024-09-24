@@ -8,12 +8,11 @@ type StatusComponentProps = {
 };
 
 function StatusComponent() {
-  const { companies, selectedCompany } = useCompanyContext();
+  const { selectedCompany } = useCompanyContext();
   const statusComponentProps: StatusComponentProps[] = [
     { name: "Sensor de Energia", image: energyIcon },
     { name: "Crítico", image: warningIcon },
   ];
-  console.log(companies);
   return (
     <div className="flex justify-between items-center ">
       <h1>

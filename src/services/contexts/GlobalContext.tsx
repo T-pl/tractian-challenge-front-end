@@ -1,10 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import api from "../api/axios";
-
-type Company = {
-  id: string;
-  name: string;
-};
+import { Company } from "../../models/Company";
 
 type CompanyContextType = {
   companies: Company[];

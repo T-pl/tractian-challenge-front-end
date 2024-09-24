@@ -2,17 +2,21 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        main: "#17192D",
+        neutral: "#FFF",
+        bluefocus: "#2188FF",
+        container: "#D8DFE6",
+        maincontainer: "#E3EAEF",
+        blueBtn: "#023B78",
+        bordercontainer: "#D8DFE6",
+        bgbox: "#F2F8FF",
+        boxborder: "#55A6FF",
+      },
+    },
     fontFamily: {
       sans: ["Inter", "sans-serif"],
-    },
-    colors: {
-      main: "#17192D",
-      neutral: "#FFF",
-      bluefocus: "#2188FF",
-      container: "#D8DFE6",
-      maincontainer: "#E3EAEF",
-      blueBtn: "#023B78",
     },
   },
 
